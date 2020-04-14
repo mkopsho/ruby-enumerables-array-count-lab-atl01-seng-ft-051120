@@ -1,7 +1,11 @@
 def count_strings(array)
   # Return the total number of strings in the provided array using the count enumerable
+  strings = 0
   array.count do |element|
-    if element
+    if element == String
+      strings = element
+    end
+  end
 end
 
 def count_empty_strings(array)
